@@ -1,0 +1,36 @@
+name: billing_app
+description: A Google-style barcode billing app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mobile_scanner: ^3.5.6
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  pdf: ^3.10.7
+  printing: ^5.11.0
+  path_provider: ^2.1.1
+  share_plus: ^7.2.1
+  flutter_slidable: ^3.0.1
+  animations: ^2.0.8
+  google_fonts: ^6.1.0
+  fl_chart: ^0.65.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
