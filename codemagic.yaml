@@ -5,6 +5,14 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - name: Create lib folder
+        script: |
+          mkdir -p lib/models lib/screens lib/services
+          mv main.dart lib/ 2>/dev/null || true
+          mv app_theme.dart lib/services/ 2>/dev/null || true
+          mv database_service.dart lib/services/ 2>/dev/null || true
+          mv bill.dart bill.g.dart product.dart product.g.dart lib/models/ 2>/dev/null || true
+          mv billing_screen.dart home_screen.dart history_screen.dart products_screen.dart bill_detail_screen.dart lib/screens/ 2>/dev/null || true
       - name: Get Flutter packages
         script: flutter pub get
       - name: Build APK
